@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Poppins&display=swap");
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+$font-title: "Comforter Brush", cursive;
+$primary-color: #3ccf4e;
+$secondary-color: #ef5b0cca;
+$border-primary-color: 2px solid $primary-color;
+
+@mixin title {
+    font-family: $font-title;
+    color: $primary-color;
+}
+
+@mixin buttonNav {
+    background-color: $primary-color;
+    border: none;
+}
+
+@mixin lineHr {
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    width: 20rem;
+    margin: auto;
+}
+
+.jumbotron {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0.629),
+            rgba(51, 50, 50, 0.271)
+        ),
+        url("./assets/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 93vh;
+    color: white;
+    .nav {
+        h1 {
+            @include title;
+        }
+
+        p {
+            margin-right: 20px;
+            color: white;
+        }
+    }
+}
+
+.nav-button {
+    margin-top: -1%;
+    margin-right: -3rem;
+    button {
+        @include buttonNav;
+        margin: 0 15px 0 0;
+    }
+}
+
+.description {
+    padding: 8% 20% 0% 6rem;
+    color: white;
+
+    p {
+        padding-right: 44%;
+        font-size: larger;
+    }
+
+    span {
+        @include title;
+    }
+
+    button {
+        width: 7rem;
+        @include buttonNav();
+    }
+}
+
+.container-about {
+    margin-top: 6%;
+
+    h1 {
+        text-align: center;
+    }
+
+    hr {
+        @include lineHr;
+        margin-bottom: 40px;
+    }
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $secondary-color;
+    color: white;
+    p {
+        margin: 15% 5% 0 30%;
+        font-size: 18px;
+    }
+    img {
+        margin-top: -2%;
+        margin-left: 10%;
+    }
+}
+
+.container-menu {
+    margin-top: 5%;
+    hr {
+        @include lineHr;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
