@@ -19,6 +19,7 @@ $border-primary-color: 2px solid $primary-color;
 
 @mixin buttonNav {
     background-color: $primary-color;
+    color: black;
     border: none;
 }
 
@@ -110,12 +111,48 @@ $border-primary-color: 2px solid $primary-color;
 }
 
 .container-menu {
-    margin-top: 5%;
+    margin: 10% auto;
     hr {
         @include lineHr;
+        margin-bottom: 6%;
     }
 
     h1 {
+        text-align: center;
+    }
+}
+
+.menu-choose {
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    button {
+        margin: 0 4em 0 4em;
+        width: 17em;
+        height: 5em;
+        border-radius: 25px;
+        background-color: #003865;
+        color: white;
+        border: none;
+    }
+
+    span {
+        margin-top: 10%;
+    }
+}
+
+.menu-list {
+    margin-top: 10%;
+}
+
+.list-menu {
+    padding: 0 20% 0 20%;
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    button {
         text-align: center;
     }
 }
