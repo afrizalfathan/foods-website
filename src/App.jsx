@@ -2,6 +2,7 @@ import { useState } from "react"
 import Navigation from "./components/Navigation"
 import About from "./components/About"
 import Menu from "./components/Menu"
+import Footer from "./components/Footer"
 import "./App.scss"
 import imgSalad from "./assets/food.png"
 import tea from "./assets/tea.png"
@@ -90,6 +91,7 @@ function App() {
                 setDrink={setDrink}
                 setDessert={setDessert}
             />
+            <Footer />
         </div>
     )
 }

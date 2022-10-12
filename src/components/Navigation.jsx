@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faShop, faShoppingCart } from "@fortawesome/free-solid-svg-icons"
-import { Nav, Navbar, NavDropdown, Container, Button } from "react-bootstrap"
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons"
+import { Nav, Navbar, Container, Button } from "react-bootstrap"
 
 const Navigation = () => {
     return (
@@ -18,10 +18,7 @@ const Navigation = () => {
                             <h1>Dapur's</h1>
                         </Navbar.Brand>
                         <Navbar.Toggle />
-                        <Navbar.Collapse
-                            id="basic-navbar-nav"
-                            className="justify-content-end"
-                        >
+                        <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="m-auto">
                                 <Nav.Link href="#home">
                                     <p>Home</p>

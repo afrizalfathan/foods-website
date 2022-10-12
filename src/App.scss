@@ -9,7 +9,8 @@
 
 $font-title: "Comforter Brush", cursive;
 $primary-color: #3ccf4e;
-$secondary-color: #ef5b0cca;
+$secondary-color: #ef5b0c;
+$tri-color: #003865;
 $border-primary-color: 2px solid $primary-color;
 
 @mixin title {
@@ -131,7 +132,7 @@ $border-primary-color: 2px solid $primary-color;
         width: 17em;
         height: 5em;
         border-radius: 25px;
-        background-color: #003865;
+        background-color: $tri-color;
         color: white;
         border: none;
     }
@@ -155,4 +156,39 @@ $border-primary-color: 2px solid $primary-color;
     button {
         text-align: center;
     }
+}
+
+.newsletter-container {
+    color: white;
+    background-color: $tri-color;
+    padding: 90px 20px;
+}
+
+.nav-social {
+    background-color: $secondary-color;
+
+    button {
+        width: 40px;
+        height: 40px;
+        margin-right: 2%;
+        border-radius: 10px;
+        background-color: transparent;
+    }
+}
+
+.footer-link {
+    padding-top: 50px;
+    text-align: center;
+    a {
+        margin-top: 20px;
+        margin-bottom: 200px;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.social-media {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
 }
